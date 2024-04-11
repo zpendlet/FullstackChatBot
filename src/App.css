@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #0b2944;
+  background-color:  #001428;
   min-height: 100vh;
   display: flex;
   padding: 30px;
@@ -31,7 +31,7 @@
   min-height: 500px;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #1b3954;
+  background-color: #001428;
   border-radius: 20px;
   border: 5px solid #9fc5e8;
   text-align: center;
@@ -69,7 +69,7 @@
   max-width: 800px;
   padding: 20px;
   border: 2px solid #9fc5e8;
-  background-color: #1b3954;
+  background-color:  #001428;
   border-radius: 10px;
   font-size: 17px;
   color: #9fc5e8;
