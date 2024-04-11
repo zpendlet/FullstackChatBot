@@ -2,37 +2,107 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/Users/zoependleton/Desktop/DevBotBasics/devbot-basics/Fonts/Fonts/RobotoSlab-VariableFont_wght.ttf')  format('truetype');
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0b2944;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 30px;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #9fc5e8;
+  font-family: 'Roboto Slab', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+  color: #ffe599;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.textBox {
+  position: relative; /* Add relative positioning */
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  min-height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1b3954;
+  border-radius: 20px;
+  border: 5px solid #9fc5e8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.leftColumn {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.version {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.rightColumn {
+  grid-column: 2;
+}
+
+.textBox h2 {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.chat-input {
+  flex: 1;
+  position: absolute; 
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid #9fc5e8;
+  background-color: #1b3954;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #9fc5e8;
+  margin-bottom: 20px;
+}
+
+.chat-input::placeholder {
+  font-size: 15px;
+}
+
+.response {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+ 
+  border-radius: 10px;
+  color: #9fc5e8;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    flex-direction: column; /* Change to single column layout on small screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .rightColumn {
+    order: -1; /* Move the right column above the left column in the column layout */
+  }
+
+  .chat-input {
+    width: 70%;
   }
 }
